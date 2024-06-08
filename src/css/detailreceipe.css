@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+    min-height: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.container, .container_two {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.container_three {
+    width: 80%;
+    height: 30%;
+    margin: 2rem auto;
+}
+
+.container_four {
+    background-color: #e8f5e4;
+}
+
+/*section 1*/
+
+.card{
+    background-color: white;
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.28);
+    border-radius: 10px;
+}
+
+.card-image{
+    height: 35rem;
+    overflow: hidden;
+}
+
+.card-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content{
+    padding: 2rem;
+}
+
+.blog-details, .icon-text{
+    display: flex;
+    align-items: center;
+}
+
+.icon-text{
+    margin-right: 1rem;
+}
+
+.tag{
+    margin-right: 1rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #2c6442;
+    border-radius: 5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c6442;
+    font-family: "Raleway", sans-serif;
+}
+
+.icon-text .icon{
+    color: var(--primary);
+    margin: 0.5rem;
+}
+
+.blog-cta{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-more{
+    background-color: transparent;
+     display: inline-block;
+    border-color: #2c6442;
+    font-size: 20px;
+    color: #2c6442;
+    padding: 10px;
+    border-radius: 0.6rem;
+    font-style: normal;
+}
+
+
+@media screen and (min-width:900px) {
+    .card{
+        display: flex;
+        height: 35rem;
+        overflow: hidden;
+    }
+
+    .card-image{
+        height: auto;
+        flex: 1;
+    }
+
+    .card-content{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+
+/*section 2*/
+
+.detail, .detail_two {
+    padding-top: 5rem;
+    margin-left: 4rem;
+}
+
+.detail .head-ingredients, .detail_two .head-ingredients_two{
+    font-size: 3rem;
+}
+
+.detail .desc-food, .detail_two .desc-food_two {
+    color: gray;
+}
+
+.detail p, .detail_two p {
+    color: #2c6442;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.detail h1 img, .detail_two h1 img{
+    height: 3rem;
+    width: 3rem;
+}
+
+
+@media(max-width: 700px) {
+ 
+    .detail, .detail_two {
+        padding-top: 5rem; /* Decrease padding for smaller screens */
+        margin-left: 2rem; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .detail .head-ingredients, .detail_two .head-ingredients_two {
+        font-size: 3rem; /* Decrease font size for smaller screens */
+    }
+
+    .detail p,  .detail_two p {
+        margin-top: 3rem; /* Adjust margin top */
+        margin-right: 0; /* Remove right margin */
+        margin-left: 0; /* Remove left margin */
+    }
+}

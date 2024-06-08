@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap");
+
+
+body{
+    background-color: #e8e8e8;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+.grid-containers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    padding: 1rem;
+}
+
+.allrecipes h1{
+    margin-left: 3rem;
+}
+
+.allrecipes h1 span{
+    color: rgb(4, 87, 4);
+    font-family: "Raleway", sans-serif;
+}
+
+.allrecipes h1 span img{
+    height: 3rem;
+    width: 3rem;
+}
+
+/*card design*/
+
+.grid-item {
+    background-color: white;
+    border: .1rem solid #bad8be;
+    padding: .8rem;
+    border-radius: 1.2rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 1.2rem;
+    height: 21.4rem;
+    object-fit: cover;
+}
+
+.card__details {
+    /* Add space around the details */
+    padding: 1.6rem .8rem .8rem .8rem;
+  }
+
+.card_details .tag{
+    padding: .4rem .8rem;
+    border: .1rem solid #e5eaed;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #788697;
+    font-family: "Raleway", sans-serif;
+}
+
+.card_details .name {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-top: 1.6rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.card_details p {
+    font-size: 1.4rem;
+    color: #7f8c9b;
+    line-height: 150%;
+    font-family: "Raleway", sans-serif;
+}
+
+.card_details button {
+    border: none;
+    padding: 1.2rem 2.4rem;
+    border-radius: 5rem;
+  
+    font-weight: 600;
+    color: rgb(4, 87, 4);
+    background-color: #e0efff;
+    font-family: "Raleway", sans-serif;
+  
+    /* Button is inline-block element by default, it need to have block display for margin: 0 auto; to work */
+    margin: 0 auto;
+    display: block;
+  
+    /* Button is a clickable element, therefore it should have a pointer cursor */
+    cursor: pointer;
+}
+
+.card_details button:focus,
+button:hover {
+  background-color: rgb(4, 87, 4);
+  color: #e0efff;
+}
+
+/*style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+ transform: translate3d(0px, 0px,0px) scale3d(1,1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    will-change: transform;*/
+/* not Login screen */
+.notlogin {
+    width: 100%;
+    height: 50rem;
+    padding: 1rem;
+    align-items: center;
+    margin: auto;
+}
+
+.notlogin h1 {
+    font-size: 8rem;
+    color: green;
+}
+
+
+/************************************************************************************************************/    
+
+/* Media Query for responsiveness */
+@media (max-width: 600px) {
+    html{
+        font-size: 45%;
+    }
+
+    .grid-containers {
+      grid-template-columns: 1fr;
+    }
+ }
